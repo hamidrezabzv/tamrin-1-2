@@ -1,1 +1,44 @@
 /* header */
+
+.head{
+    height: 90px;
+}
+
+.head2{
+    height: 100%;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* under header */
+.under-head{
+    height: 80px;
+    grid-template-columns: auto 2fr;
+}
+
+.left-section{
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.under-head img{
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 100px;
+}
+
+.under-head .number{
+    margin-left: 20px;
+}
+
+.under-head .icon{
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+
+.under-head .icon1{
+   font-size: 25px;
+}
