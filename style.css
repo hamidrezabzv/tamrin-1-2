@@ -1,3 +1,8 @@
+body{
+    background-color: black;
+    height: 1300px;
+}
+
 /* header */
 
 .head{
@@ -26,6 +31,7 @@
     height: 50px;
     border-radius: 25px;
     margin-left: 100px;
+    cursor: pointer;
 }
 
 .under-head .number{
@@ -37,8 +43,173 @@
     width: 35px;
     margin-left: 20px;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 .under-head .icon1{
    font-size: 25px;
 }
+
+.under-head .search-btn{
+    width: 60px;
+    height: 50px;
+    margin-right: -8px;
+    margin-left:20px;
+
+}
+
+.under-head .search-btn:active,
+.under-head .search-btn:hover{
+    border-color: none;
+}
+
+
+.under-head .serch-img{
+    width: 30px;
+    height: 50px;
+
+}
+
+.under-head .search-text{
+    width: 200px;
+    height: 50px;
+    padding: 0 30px;
+    font-family: arial;
+}
+
+.under-head .search-text::placeholder{
+    color: rgb(179, 179, 179);
+}
+
+.under-head .right-section div{
+    font-size: 19px;
+    font-family: arial;
+    margin-left: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.under-head .right-section .one-div{
+    margin-left: 150px;
+}
+
+.under-head .right-section div:hover{
+    color: rgb(0, 0, 192);
+}
+
+.under-head .codeyad-img{
+    margin-left: 25px
+}
+
+/* sidebar */
+.sidebar{
+    position: fixed;
+    top: 200px;
+    bottom: 0px;
+    right: 90px;
+    width: 320px;
+    border-radius: 10px;  
+    z-index: 100;
+}
+
+.sidebar h5{
+    color: white;
+    margin-left: 65px;
+    margin-bottom: 20px;
+}
+
+.div-parent{
+    text-align: right;
+}
+
+.div-b{
+    color: white;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.div-b:hover{
+    color: blue;
+}
+
+/* body */
+.video-grid{
+    grid-template-columns: 330px 330px 330px;
+    column-gap: 10px;
+    row-gap: 10px;
+    text-align: right;
+}
+
+.img1{
+    width: 100%;
+    margin-bottom: 8px;
+
+}
+
+.video-img{
+    margin-left: 40px;
+    margin-top: 30px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.p-titr{
+    color: rgb(57, 57, 183);
+    background-color: white;
+    display: inline-block;
+    font-family: arial;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+h4{
+    color: white;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.p-info{
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .old-price {
+    color: red; /* رنگ قرمز برای قیمت قدیمی */
+    text-decoration: line-through; /* خط خوردن قیمت قدیمی */
+    margin-right: 10px; /* فاصله بین دو قیمت */
+  }
+  
+  .new-price {
+    color: green; /* رنگ سبز برای قیمت جدید */
+    font-weight: bold; /* ضخیم کردن قیمت جدید */
+  }
+
+a{
+    text-decoration: none;
+}
+
+.btn-more{
+    border-radius: 5px;
+    color: white;
+}
+
+.end-bar{
+    width: 400px;
+}
+
+@media (max-width:1300px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+        z-index: 100;
+    }
+}
+
